@@ -1,0 +1,64 @@
+<% layout('layout/boilerplate')%>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/stylesheets/new.css">
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="row text-center">
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow p-2 bg-ligth rounded" style="width: 400px; height: 600px;">
+            <h1 class="card-title mt-2">New Camp</h1>
+            <div class="card-body mt-1">
+                <form action="/campgrounds" method="POST" class="validated-form" novalidate enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label class="form-label" for="title"></label>
+                        <input class="form-control" type="text" id="title" name="campground[title]" required placeholder="Title">
+                        <div class="valid-feedback">
+                            Looks good
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="location"></label>
+                        <input class="form-control" type="text" id="location" name="campground[location]" required placeholder="Location">
+                        <div class="valid-feedback">
+                            Looks good
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-lable" for="price" ></label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">$</span>
+                            <input type="text" class="form-control" id="price" name="campground[price]" placeholder="0.00" aria-label="price" aria-describedby="price-label" required aria-placeholder="Campground Price">
+                            <div class="valid-feedback">
+                            Looks good
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="description"></label>
+                        <textarea class="form-control" type="text" id="description" name="campground[description]" required placeholder="Description"></textarea>
+                        <div class="valid-feedback">
+                            Looks good
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-file custom-file">
+                            <input class="form-control" type="file" name="image" id="image" multiple />
+                            <label for="image" class="form-file-label">
+                                <span class="form-file-text custom-file-label"></span>
+                            </label>  
+                        </div>  
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">Add</button>
+                    </div>
+                    <a class="fas fa-arrow-left" href="/campgrounds">Back to camps</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(216, 216, 216, 0.575);
+}
+
+.card {
+    width: 350px;
+    height: 600px;
+    background-color: rgb(43, 42, 42) !important;
+    color: rgb(255, 246, 232);
+}
+
+.form-control  {
+    line-height: 15px;
+    font-size: 0.8rem;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 246, 232);
+}
+
+h5{
+    text-align: center;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 10px;
+}
+
+img{
+    width: 350px;
+    height: 300px;
+}
+
+.btn{
+    font-weight: bold;
+}

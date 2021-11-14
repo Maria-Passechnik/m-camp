@@ -1,0 +1,43 @@
+<% layout('layout/boilerplate')%>
+<link rel="stylesheet" href="/stylesheets/signin.css">
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow bg-light rounded">
+                <img src="https://res.cloudinary.com/m-camp/image/upload/v1636807681/MCamp/login-img_ue8yvi.jpg"  class="card-img-top" alt="" />
+                <div class="card-body">
+                    <h5 class="card-title">Sign in to MCamp</h5>
+                    <form action="/signin" method="POST" class="validated-form" novalidate>
+                        <div class="mb-1">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required>
+                            <div class="valid-feedback">
+                                Looks good
+                            </div>
+                        </div>
+                    
+                        <div class="mb-1">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                            <div class="valid-feedback">
+                                Looks good
+                            </div>
+                        </div>
+                    
+                        <div class="mb-1">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good
+                            </div>
+                        </div>
+                        <div class="mb-1 btnContainer">
+                            <button class="btn btn-sm btn-outline-light">Sign in</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
